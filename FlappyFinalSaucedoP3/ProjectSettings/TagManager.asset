@@ -47,6 +47,9 @@ TagManager:
   - name: Character
     uniqueID: 4219580939
     locked: 0
+  - name: Midground
+    uniqueID: 2317887151
+    locked: 0
   - name: Ground
     uniqueID: 3728645697
     locked: 0

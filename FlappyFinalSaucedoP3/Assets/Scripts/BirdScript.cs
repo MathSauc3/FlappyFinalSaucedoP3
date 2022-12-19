@@ -10,6 +10,7 @@ public class BirdScript : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb2d;
 
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -17,8 +18,7 @@ public class BirdScript : MonoBehaviour
         
     }
 
-    
-    void Update()
+        void Update()
     {
      if (isDead == false)
         {
@@ -27,6 +27,7 @@ public class BirdScript : MonoBehaviour
                 anim.SetTrigger("Flap");
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(0, upForce));
+                
             }
         }   
     }
@@ -36,6 +37,7 @@ public class BirdScript : MonoBehaviour
         isDead = true;
         anim.SetTrigger("Die");
         GameControl.instance.BirdDied();
+       
     }
 
 }
